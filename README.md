@@ -108,6 +108,9 @@ OR
 python app.py
 ```
 
+```
+NOTE : Execute the mumbai_house_model.ipynb to get random_model.pkl before executing the whole app. 
+```
 ## Minimum Requirements
 
 * HDD : 500gb 
