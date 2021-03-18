@@ -1,0 +1,73 @@
+body{
+	background-image: url("/static/img/house.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.p-top{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.ab{
+	padding: 10px 0px 40px 0px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #fff;
+	-webkit-box-shadow: -4px 10px 63px 14px rgba(0,0,0,0.75);
+	-moz-box-shadow: -4px 10px 63px 14px rgba(0,0,0,0.75);
+	box-shadow: -4px 10px 63px 14px rgba(0,0,0,0.75);
+}
+
+.frgt a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.frgt a:hover{
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.socials i{
+	color: #fff;
+	padding: 6px;
+}
+
+.socials .fa-facebook{
+	background-color: rgba(59, 89, 152, 0.5);
+	display: inline-block;
+	border: 1px solid #fff;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 0 7px;
+}
+
+.socials .fa-twitter{
+	background-color: rgba(0, 172, 238, 0.5);
+	display: inline-block;
+	border: 1px solid #fff;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 0 7px;
+}
+
+.socials .fa-google{
+	background-color: rgba(219, 50, 54, 0.5);
+	display: inline-block;
+	border: 1px solid #fff;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 0 7px;
+}
+.socials .fa-linkedin{
+	background-color: rgba(14, 118, 168, 0.5);
+	display: inline-block;
+	border: 1px solid #fff;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 0 7px;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>House Price Prediction</title>
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row p-top">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4 ab border">
+        <center>
+          <form action="{{ url_for('predict')}}" method="post">
+              <br>
+              <br>
+              <h2>House Price Prediction</h2>
+
+            <br><br>
+
+
+            <div class="form-group">
+              <input type="number" name="BHK" placeholder="Enter Number of BHK" required="required" />
+            </div>
+            <div class="form-group">
+              <input type="number" name="Bathroom" placeholder="Enter Number of Bathroom" required="required" />
+            </div>
+            <div class="form-group">
+              <input type="number" name="rate_persqft" placeholder="Enter rate_sqft" required="required" /><br>
+            </div>
+            <div class="form-group">
+              <input type="number" name="area_insqft" placeholder="Enter areain_sqft" required="required" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="construction_status" placeholder="Enter Construction type" required="required" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="Sale_type" placeholder="Enter Sale type" required="required" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="location" placeholder="Enter Location" required="required" />
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-block btn-success">Predict</button>
+          </form>
+        </center>
+        <div>
+          <center>
+            <h3>{{ prediction_text }}</h3>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
