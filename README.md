@@ -91,11 +91,11 @@ pip install -r requirements.txt
 * Run the following commands on command line : (make sure you are in same working directory and you have activated virtual environment)
 
 ```
-set FLASK_ENV=development
+set FLASK_APP=app
 ```
 
 ```
-set FLASK_APP=app
+set FLASK_ENV=development
 ```
 
 ```
@@ -137,15 +137,6 @@ NOTE : Execute the mumbai_house_model.ipynb to get random_model.pkl before execu
 
 Data used is scraped from makaan.com website and uploaded in Repository in Data folder.
 
-## Contributing
-
-**Become a Contributor 🙌 💎**
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to your Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
